@@ -1,6 +1,6 @@
 import users from "/users.js";
 
-const getUserWithEmail = (users, email) => users.find((us) => us.email === email);
+const getUserWithEmail = (users, email) => users.find(user => user.email === email);
   // твій код
 ;
 

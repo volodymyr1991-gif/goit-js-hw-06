@@ -1,12 +1,8 @@
 import users from "/users.js";
 
-const getUsersWithAge = (users, min, max) => {
-  return users
-    .filter((use) => use.age >= min && use.age <= max)
-    .map((use) => use);
-  // твій код
-};
-
+const getUsersWithAge = (users, min, max) =>
+  users.filter((use) => use.age >= min && use.age <= max).map((use) => use);
+// твій код
 console.log(getUsersWithAge(users, 20, 30)); // [об'єкт Ross Vazquez, об'єкт Elma Head, об'єкт Carey Barr]
 
 console.log(getUsersWithAge(users, 30, 40));

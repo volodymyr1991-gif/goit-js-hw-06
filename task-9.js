@@ -6,8 +6,8 @@ const getNamesSortedByFriendsCount = (users) =>
       (frendsPrew, frendsNext) =>
         frendsPrew.friends.length - frendsNext.friends.length
     )
-    .map((tt) => {
-      return tt.name;
+    .map((bigFriemds) => {
+      return bigFriemds.name;
     });
 
 console.log(getNamesSortedByFriendsCount(users));
